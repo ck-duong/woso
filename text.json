@@ -1,0 +1,16 @@
+{"simple-columns": [
+    "competition",
+    "season",
+    "away_team",
+    "home_team"
+],
+ "complex-columns": [
+     "away_team",
+     "home_team"
+ ],
+ "id-columns": [
+     "competition_stage",
+     "referee",
+     "stadium"
+ ]
+}
