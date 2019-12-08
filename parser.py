@@ -81,14 +81,17 @@ class Events:
     
     def print_players(self):
         unique_players = []
+        positions = []
         for event in self.data:
             try:
                 name = event['player']['name']
+                position = event['position']['name']
                 if name not in unique_players:
                     unique_players.append(name)
+                    positions.append(position)
             except:
                 pass
-        return unique_players
+        return pd.DataFrame({'player': unique_players, 'position': positions})
     
     def get_player_data(self, player_name):
         valid_actions = []
